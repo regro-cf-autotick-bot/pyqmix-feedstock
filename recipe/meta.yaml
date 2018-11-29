@@ -12,7 +12,7 @@ source:
 build:
   number: 2000
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv ."
-  skip: True  # [unix]
+  skip: True  # [not win]
 
 requirements:
   host:
