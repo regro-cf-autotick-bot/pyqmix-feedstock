@@ -10,13 +10,11 @@ source:
   sha256: 8c0252a4908fa3608aa72c1d53d6a2a685806a6125ee93eb61c69e02134bbec5
 
 build:
-  number: 0
+  number: 2000
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv ."
   skip: True  # [not win]
 
 requirements:
-  build:
-  #  -
   host:
     - python
     - pip
