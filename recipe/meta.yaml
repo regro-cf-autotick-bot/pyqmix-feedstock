@@ -10,7 +10,7 @@ source:
   sha256: c0f860a3ea8c0528b79df9c373694b121b519132f17fc1ffb0fba4c6bf9d955a
 
 build:
-  number: 1000
+  number: 2000
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv ."
   skip: True  # [not win]
 
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - hoechenberger
+    - ArndalAndersen
