@@ -1,5 +1,5 @@
 {% set name = "pyqmix" %}
-{% set version = "2018.12.13" %}
+{% set version = "2019.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0f860a3ea8c0528b79df9c373694b121b519132f17fc1ffb0fba4c6bf9d955a
+  sha256: 37e066f71a7e0872bcfcdd4e65a296da1b5d297878ee546fe7e453babb9cdd1a
 
 build:
-  number: 2000
+  number: 0
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv ."
   skip: True  # [not win]
 
