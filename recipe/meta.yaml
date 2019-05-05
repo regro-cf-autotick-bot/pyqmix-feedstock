@@ -23,7 +23,7 @@ requirements:
     - ruamel.yaml
     - appdirs
     - pywin32  # [win]
-    - future
+    - future  # [py2k]
 
 test:
   imports:
