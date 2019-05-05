@@ -12,7 +12,6 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv ."
-  skip: True  # [not win]
 
 requirements:
   host:
@@ -23,7 +22,7 @@ requirements:
     - cffi
     - ruamel.yaml
     - appdirs
-    - pywin32
+    - pywin32  # [win]
     - future
 
 test:
