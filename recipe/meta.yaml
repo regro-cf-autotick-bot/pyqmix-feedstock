@@ -1,5 +1,5 @@
 {% set name = "pyqmix" %}
-{% set version = "2021.1.1" %}
+{% set version = "2021.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 25a60756edb04ffee30071b6de92f65f75ad21997e41d8ca5fc2021d41c043fa
+  sha256: 02d22b0b39afb0e2af4323a10906ae98648531d6c1db2b187549503fee17d592
 
 build:
   number: 0
