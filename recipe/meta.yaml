@@ -26,7 +26,6 @@ requirements:
     - ruamel.yaml
     - appdirs
     - pywin32  # [win]
-    - future  # [py2k]
 
 test:
   imports:
@@ -34,8 +33,7 @@ test:
 
 about:
   home: https://github.com/psyfood/pyqmix
-  license: GPL-3.0
-  license_family: GPL
+  license: GPL-3.0-only
   license_file: LICENSE
   summary: A wrapper for the Cetoni Qmix SDK
   description: |
