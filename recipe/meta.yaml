@@ -12,7 +12,7 @@ source:
 build:
   number: 4
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv .
-  skip: true  # [py>3.11]
+  skip: true  # [py>311]
 
 requirements:
   build:
