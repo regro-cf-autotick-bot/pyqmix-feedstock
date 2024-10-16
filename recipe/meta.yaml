@@ -12,17 +12,18 @@ source:
 build:
   number: 4
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vvv .
+  skip: true  # [py>3.11]
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python <=3.11
+    - python
     - pip
     - setuptools
   run:
-    - python <=3.11
+    - pytho
     - cffi
     - ruamel.yaml
     - appdirs
